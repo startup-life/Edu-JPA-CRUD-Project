@@ -5,7 +5,8 @@ import lombok.NoArgsConstructor;
 
 @Getter
 @NoArgsConstructor
-public class UpdatePostRequest {
-    private String title;   // optional
-    private String content; // optional
+public class CreateUserRequestDto {
+    private String email;
+    private String password;
+    private String nickname;
 }

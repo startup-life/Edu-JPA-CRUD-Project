@@ -6,12 +6,12 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public class UserResponse {
+public class UserResponseDto {
     private Long id;
     private String email;
     private String nickname;
 
-    public static UserResponse of(User user) {
-        return new UserResponse(user.getId(), user.getEmail(), user.getNickname());
+    public static UserResponseDto of(User user) {
+        return new UserResponseDto(user.getId(), user.getEmail(), user.getNickname());
     }
 }

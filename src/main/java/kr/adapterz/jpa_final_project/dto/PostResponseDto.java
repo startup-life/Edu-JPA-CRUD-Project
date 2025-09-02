@@ -6,15 +6,15 @@ import lombok.Getter;
 
 @Getter
 @AllArgsConstructor
-public class PostResponse {
+public class PostResponseDto {
     private Long id;
     private String title;
     private String content;
     private Long authorId;
     private String authorNickname;
 
-    public static PostResponse of(Post p) {
-        return new PostResponse(
+    public static PostResponseDto of(Post p) {
+        return new PostResponseDto(
                 p.getId(),
                 p.getTitle(),
                 p.getContent(),
